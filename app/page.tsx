@@ -26,7 +26,7 @@ function HeroSection() {
           Mingle EN trains the gap between advanced knowledge and natural communication. Speed. Pressure. Real patterns.
         </p>
         <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', flexWrap: 'wrap' }}>
-          <a href="/download" style={{ backgroundColor: '#4A9EFF', color: '#070B14', padding: '0.75rem 1.75rem', borderRadius: '0.5rem', fontWeight: 700, fontSize: '0.9rem' }}>
+          <a href="https://app.mingle-en.com" style={{ backgroundColor: '#4A9EFF', color: '#070B14', padding: '0.75rem 1.75rem', borderRadius: '0.5rem', fontWeight: 700, fontSize: '0.9rem' }}>
             Start practicing
           </a>
           <a href="/blog" style={{ color: '#8BA0BB', fontSize: '0.9rem' }}>
@@ -121,7 +121,7 @@ function CTASection() {
         <p style={{ color: '#8BA0BB', maxWidth: '440px', margin: '0 auto 2.5rem', fontSize: '1rem' }}>
           The app is free to start. Your engine begins learning from your first session.
         </p>
-        <a href="/download" style={{ display: 'inline-block', backgroundColor: '#4A9EFF', color: '#070B14', padding: '0.875rem 2.5rem', borderRadius: '0.5rem', fontWeight: 700, fontSize: '1rem' }}>
+        <a href="https://app.mingle-en.com" style={{ display: 'inline-block', backgroundColor: '#4A9EFF', color: '#070B14', padding: '0.875rem 2.5rem', borderRadius: '0.5rem', fontWeight: 700, fontSize: '1rem' }}>
           Start Practicing
         </a>
         <p style={{ marginTop: '1.5rem', fontSize: '0.8rem', color: '#3D5470' }}>

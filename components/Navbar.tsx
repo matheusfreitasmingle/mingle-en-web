@@ -10,7 +10,7 @@ export default function Navbar() {
         <div style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
           <a href="/blog" style={{ fontSize: '0.85rem', color: '#8BA0BB' }}>Blog</a>
           <a href="/download" style={{ fontSize: '0.85rem', color: '#8BA0BB' }}>Download</a>
-          <a href="https://app.mingle-en.com" style={{ fontSize: '0.85rem', color: '#070B14', backgroundColor: '#4A9EFF', padding: '0.4rem 1rem', borderRadius: '0.375rem', fontWeight: 700, maxWidth: '200px', display: 'inline-block', textAlign: 'center' }}>
+          <a href="https://app.mingle-en.com" style={{ fontSize: '0.85rem', color: '#070B14', backgroundColor: '#4A9EFF', padding: '0.4rem 1rem', borderRadius: '0.375rem', fontWeight: 700, maxWidth: '120px', display: 'inline-block', textAlign: 'center' }}>
   Open app
 </a>
         </div>

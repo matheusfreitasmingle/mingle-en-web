@@ -130,3 +130,33 @@ a {
 ::-webkit-scrollbar-track  { background: #070B14; }
 ::-webkit-scrollbar-thumb  { background: #1E2D45; border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: #3D5470; }
+
+@media (max-width: 768px) {
+  .navbar-app-button {
+    width: 44px;
+    height: 44px;
+    padding: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar-app-button-text {
+    display: none;
+  }
+
+  .navbar-app-button-icon {
+    display: inline;
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .navbar-app-button-icon {
+    display: none;
+  }
+
+  .navbar-app-button-text {
+    display: inline;
+  }
+}

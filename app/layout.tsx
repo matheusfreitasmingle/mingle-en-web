@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
+
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 
@@ -14,21 +16,24 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Mingle EN — Sharpen your English.',
-  description: 'Train reflexive English fluency. Not courses. Not theory. Real-world communication patterns under pressure.',
-  metadataBase: new URL('https://mingle-en.com'),
+  title: "Mingle EN — Sharpen your English.",
+  description:
+    "Train reflexive English fluency. Not courses. Not theory. Real-world communication patterns under pressure.",
+  metadataBase: new URL("https://mingle-en.com"),
   openGraph: {
-    title: 'Mingle EN — Sharpen your English.',
-    description: 'Train reflexive English fluency. Not courses. Not theory. Real-world communication patterns under pressure.',
-    url: 'https://mingle-en.com',
-    siteName: 'Mingle EN',
-    locale: 'en_US',
-    type: 'website',
+    title: "Mingle EN — Sharpen your English.",
+    description:
+      "Train reflexive English fluency. Not courses. Not theory. Real-world communication patterns under pressure.",
+    url: "https://mingle-en.com",
+    siteName: "Mingle EN",
+    locale: "en_US",
+    type: "website",
   },
   twitter: {
-    card: 'summary_large_image',
-    title: 'Mingle EN — Sharpen your English.',
-    description: 'Train reflexive English fluency. Not courses. Not theory. Real-world communication patterns under pressure.',
+    card: "summary_large_image",
+    title: "Mingle EN — Sharpen your English.",
+    description:
+      "Train reflexive English fluency. Not courses. Not theory. Real-world communication patterns under pressure.",
   },
   robots: {
     index: true,
@@ -48,9 +53,26 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         <Navbar />
-        <div style={{ paddingTop: '60px' }}>
+
+        <div style={{ paddingTop: "60px" }}>
           {children}
         </div>
+
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-2VJBM36Z71"
+          strategy="afterInteractive"
+        />
+
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-2VJBM36Z71');
+          `}
+        </Script>
       </body>
     </html>
   );
